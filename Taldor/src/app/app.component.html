@@ -1,0 +1,19 @@
+
+<div   >
+  <div *ngIf="isVisible" class="keepcentered" [@goals]="isVisible" [@slideInOut]="!isVisible">
+      <div class="header">
+          <input #search (change)="filterInput(search.value)" type="text" placeholder="Filter by Title">
+      </div>
+      
+      <div class="list">
+          <div *ngFor="let item of Data">
+            <h1>{{ item.title }}</h1>
+            <img src="{{ item.src }}" style="width:100px,height:100px">
+          </div>
+      </div>
+      <div class="footer">
+          <button (click)="onClose()">Close</button>
+      </div>
+  </div>
+</div>
+
