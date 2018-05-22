@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './component/App';
 
-import 'leaflet/dist/leaflet.css';
+//import 'leaflet/dist/leaflet.css';
 
 ReactDOM.render(
     <Provider store={store}>

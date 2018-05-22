@@ -139,8 +139,8 @@ class MainView extends Component {
                                 <LocationView  {...props} {...sharedProps}/>
                             )}
                         />
-                        <Route exact path={`/`}  render={(props) => (
-                                <LocationView  {...props} {...sharedProps}/>
+                        <Route render={(props) => (
+                            <Redirect from="/" to="/location" />
                             )}
                         />
                     </Switch>
